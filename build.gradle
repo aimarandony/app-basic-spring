@@ -31,6 +31,11 @@ dependencies {
     compile group: 'org.apache.poi', name: 'poi', version: '3.17'
     // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
     compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
+    // https://mvnrepository.com/artifact/org.zalando/problem
+    compile group: 'org.zalando', name: 'problem', version: '0.23.0'
+    // https://mvnrepository.com/artifact/org.zalando/jackson-datatype-problem
+    compile group: 'org.zalando', name: 'jackson-datatype-problem', version: '0.23.0'
+
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'

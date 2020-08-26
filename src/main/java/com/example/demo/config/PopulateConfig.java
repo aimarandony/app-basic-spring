@@ -19,10 +19,6 @@ public class PopulateConfig {
     StudentService studentService;
 
     @PostConstruct
-    public void init(){
-        databaseInit();
-    }
-
     public void databaseInit(){
         City city1, city2, city3;
         Student student1, student2, student3, student4, student5;

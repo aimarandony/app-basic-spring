@@ -1,7 +1,9 @@
 package com.example.demo.config;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.zalando.problem.ProblemModule;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
@@ -19,4 +21,12 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any())
                 .build();
     }
+
+    //PROBLEM
+    @Bean
+    public ObjectMapper objectMapper() {
+        return new ObjectMapper().registerModules(
+                new ProblemModule());
+    }
+
 }
