@@ -12,7 +12,7 @@ import org.zalando.problem.Status;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:3000"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://basic-app-react.netlify.app"})
 @RequestMapping("/api")
 @RestController
 public class CityContoller {
